@@ -1,0 +1,42 @@
+#carouselExampleCaptions {
+    width: 600px; /* or your desired width */
+    margin: 0 auto; /* Center the carousel horizontally */
+    text-align: center;
+}
+
+
+#image1 {
+    width: 800px; /* or your desired width */
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+.images {
+    display: flex;
+    animation-name: mesImages;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+@keyframes mesImages {
+    0% {
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-640px)
+    }
+    50% {
+        transform: translate(-1280px)
+    }
+    75% {
+        transform: translate(-1920px)
+    }
+    100% {
+        transform: translate(0);
+    }
+}
